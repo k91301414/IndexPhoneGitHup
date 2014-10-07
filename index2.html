@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #3CF;
+}
+</style>
+</head>
+<body>
+<p>Hello, world. - from JC ;) 揪瞇 </p>
+<script type="text/javascript">
+function AlertIt() {
+	//亂數
+	var myrandom=Math.round(Math.random()*2)
+	//訊息清單
+	var messages=new Array()
+	messages[0]="幹嘛？"
+	messages[1]="想去買東西嗎？"
+	messages[2]="想看影片嗎？"
+	//連結清單
+	var links=new Array()
+	links[0]="http://www.google.com"
+	links[1]="http://www.yahoo.com"
+	links[2]="http://www.youtube.com"
+	links[3]="https://www.manymo.com"
+	//點下去要顯示
+	var answer = confirm (messages[myrandom])
+	//如果點「是」
+	if (answer)
+	window.location=links[myrandom]
+	else if(!answer){window.location=links[3]
+		}
+}
+</script> 
+<table width="100%" height="100%" border="0">
+  <tr>
+    <td align="center" valign="middle">
+<a href="javascript:AlertIt();"><img src="image.png">
+<p>按我</p></a> 
+&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
